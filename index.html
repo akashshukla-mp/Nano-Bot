@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nano Bot</title>
+    <link rel="icon" href="./img/bot_img.png" type="image/x-icon">
+    <link href="./bot.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <script src="./bot.js" defer></script>
+
+    <style>
+
+      
+      body, .typing-container{
+        width: 600px;
+        margin: auto;
+        /* margin: 2px solid red !important; */
+        box-shadow: 4px 4px 10px #0f0f17, -4px -4px 10px #0f0f17, 1px 1px 2px #ffffff inset, 2px 2px 8px #ffffff inset;
+        border-radius: 10px;
+        
+      }
+
+
+
+      .light-btn{
+        display: none !important;
+        visibility: hidden;
+        height: 0px;
+      }
+
+      body:hover{
+          /* font-style: italic; */
+          /* background: linear-gradient(to left, #ff6b4f, #fac147); */
+
+      
+      box-shadow: 4px 4px 5px #ffffff, -4px -4px 10px #ffffff, 2px 2px 4px #ededed inset, 4px 4px 8px #ffffff;
+
+      
+      }
+
+      .chat-input{
+        border-radius: 20px;
+        margin: 5px solid red !important;
+      }
+
+    </style>
+  
+  </head>
+  <body>
+
+    <div class="outer-container">
+
+      <div class="chat-container">
+        
+      </div>
+
+      <div class="typing-container">
+
+        <div class="typing-content">
+
+        <div class="typing-textarea">
+
+          <textarea class="chat-input" placeholder="Enter Your Promot Here!"></textarea>
+
+          <span class="send-btn material-symbols-rounded">send</span>
+
+        </div> 
+
+        <div class="typing-setting">
+
+          <span class="light-btn theme-btn material-symbols-rounded">light_mode</span>
+          <span class="delete-btn material-symbols-rounded">delete</span>
+
+        </div>
+
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
